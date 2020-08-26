@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ClockApplication</string>
+    <string name="clock_application">Clock Application</string>
+    <string name="time_waits_for_no_one">Time Waits For No One!!</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="app_by_sulav">app by sulav</string>
+    <string name="exit">EXIT</string>
+    <string name="home_screen">HOME SCREEN</string>
+    <string name="stop_watch">Stop Watch</string>
+    <string name="timer">Timer</string>
+    <string name="alarm">Alarm</string>
+    <string name="go_back">Go Back</string>
+    <string name="begin">Begin</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="enter_time_in_seconds">Enter Time In Seconds</string>
+    <string name="countdown_timer">COUNTDOWN TIMER</string>
+    <string name="enter">Enter</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="enter_hour">Enter Hour</string>
+    <string name="enter_minute">Enter Minute</string>
+    <string name="back">Back</string>
+</resources>

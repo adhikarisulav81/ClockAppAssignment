@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    tools:context=".TimerAct">
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/countdown_timer"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:alpha="0.5"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/ivclockimg"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img"
+        tools:ignore="ContentDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginLeft="-20dp"
+        android:layout_marginLeft="400dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:textColorHint="#FFF"
+        android:inputType="number"
+        android:textColor="#FFF"
+        android:gravity="center_horizontal"
+        android:hint="@string/enter_time_in_seconds"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnselect"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/enter"
+        app:fontFamily="monospace"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#212"
+        android:textColor="#FFF"
+        android:onClick="select"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/back"
+        app:fontFamily="monospace"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#212"
+        android:textColor="#FFF"
+        android:onClick="select" />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/stop_watch"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:alpha="0.5"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/ivclockimg"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/img"
+        tools:ignore="ContentDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        app:fontFamily="sans-serif-black"
+        android:textColor="#FFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginRight="0dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:onClick="beginChronometer"
+        android:textStyle="bold"
+        android:background="#212"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:text="@string/begin"
+        app:fontFamily="monospace"
+        tools:ignore="OnClick"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="#212"
+        android:textColor="#FFF"
+        android:text="@string/pause"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        android:onClick="pauseChronometer"
+        tools:ignore="OnClick"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="#212"
+        android:textColor="#FFF"
+        android:onClick="resetChronometer"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        tools:ignore="OnClick"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="#212"
+        android:textColor="#FFF"
+        android:onClick="goBack"
+        android:textStyle="bold"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        app:fontFamily="monospace"
+        tools:ignore="OnClick"
+        android:textSize="20sp" />
+
+</LinearLayout>
